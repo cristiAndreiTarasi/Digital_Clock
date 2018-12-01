@@ -14,7 +14,7 @@ body {
 }
 
 .clock {
-    background-color: #1e1f29;
+    background-color: #1b2b34;
     width: 700px;
     height: 350px;
 
@@ -35,10 +35,23 @@ body {
     align-items: center;
 }
 
+.days {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.days div p {
+    font-family: 'Digital-7';
+    color : #1e1e1e;
+}
+
 .time {
     height: 100px;
     width: 520px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .back, .fore {
@@ -88,12 +101,13 @@ button {
     all: unset;
 
     background-color: #1b2b34;
-    color: #a8d15d;
+    color: #aaa;
     padding: 20px 30px;
     align-self: flex-end;
     font-family: 'sans-serif';
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
+    box-shadow: 1px 1px  1px 1px #1e1f29;
 }
 
