@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Index</title>
-        <link rel="stylesheet" href="light.css">
+        <!--<link rel="stylesheet" href="light.css">-->
         <link rel="stylesheet" id="sheet" href="main.css">
     </head>
     <body onload="clockMechanism(); currDayColor();">
@@ -12,13 +12,13 @@
             <div class="clock">
                 <div class="screen">
                     <div class="days">
-                       <div class="monday"><p>mon</p></div>
-                       <div class="tuesday"><p>tue</p></div>
-                       <div class="wednesday"><p>wed</p></div>
-                       <div class="thursday"><p>thu</p></div>
-                       <div class="friday"><p>fri</p></div>
-                       <div class="saturday"><p>sat</p></div>
-                       <div class="sunday"><p>sun</p></div>
+                       <p class="monday">mon</p>
+                       <p class="tuesday">tue</p>
+                       <p class="wednesday">wed</p>
+                       <p class="thursday">thu</p>
+                       <p class="friday">fri</p>
+                       <p class="saturday">sat</p>
+                       <p class="sunday">sun</p>
                     </div>
 
                     <div class="time">
@@ -35,6 +35,24 @@
                             <div class="separator">:</div>
                             <div class="minute"></div>
                             <div class="separator">:</div>
+                            <div class="second"></div>
+                        </div>
+                    </div>
+
+                    <div class="stopwatch">
+                        <div class="bg">
+                            <div class="hours">00</div>
+                            <div class="separators">:</div>
+                            <div class="minutes">00</div>
+                            <div class="separators">:</div>
+                            <div class="seconds">00</div>
+                        </div>
+
+                        <div class="fg">
+                            <div class="hour"></div>
+                            <div class="separators">:</div>
+                            <div class="minute"></div>
+                            <div class="separators">:</div>
                             <div class="second"></div>
                         </div>
                     </div>

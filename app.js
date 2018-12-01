@@ -42,7 +42,7 @@ sheet.disabled ? sheet.disabled  =  false : sheet.disabled = true;
 //make the current day take a light color
 function currDayColor() {
     //grab every p elem in .days div 
-    let  days = document.querySelectorAll('.days > div p');
+    let  days = document.querySelectorAll('.days > p');
 
     //associate every day name in day array with days numbers returned by getDay() method
     //and return the today variable wich holds the getDay() value hence the day it corresponds in the day array
