@@ -54,7 +54,7 @@ function currDayColor() {
     //and change its color
     for(let i = 0, len = days.length; i < len; i++) {
         if(days[i].textContent == today)
-            days[i].style.color = '#ddd';
+            days[i].style.color = '#fff';
     }
 }
 

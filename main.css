@@ -46,7 +46,6 @@ body {
 /******************************** THE TIME ***/
 .time {
     display: block;
-    border: 1px solid yellow;
     height: 100px;
     width: 520px;
     margin: 0 auto;
@@ -91,14 +90,45 @@ body {
 
 /******************************** THE STOPWATCH ***/
 .stopwatch {
-    border: 1px solid yellow;
     height: 100px;
+}
+
+.bg, .fg {
     width: 520px;
+    height: 100px;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fg .hours, .fg .minutes, .fg .seconds,
+.bg .hours, .bg .minutes, .bg .seconds {
+    width: 120px;
+    height: 100px;
+    font-size: 8em;
+    font-family: 'Digital-7';
+}
+
+.bg .hours, .bg .minutes, .bg .seconds {
+    color: #1e1f29;
+}
+
+.fg .hours, .fg .minutes, .fg .seconds {
+    color: #ddd;
+}
+
+.separators {
+    height: 100px;
+    font-size: 8em;
+
+    color: #ddd;
+    font-family: 'Digital-7';
 }
 
 /******************************** THE BUTTONS ***/
 .buttons {
-    background-color: green;
     height: 25%;
     width: 520px;
     display: flex;
