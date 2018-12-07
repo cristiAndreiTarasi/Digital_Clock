@@ -99,46 +99,6 @@ body {
     font-family: 'Digital-7';
 }
 
-/******************************** THE STOPWATCH ***/
-.stopwatch {
-    height: 100px;
-    display: none;
-}
-
-.bg, .fg {
-    width: 520px;
-    height: 100px;
-    position: absolute;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fg .hours, .fg .minutes, .fg .seconds,
-.bg .hours, .bg .minutes, .bg .seconds {
-    width: 120px;
-    height: 100px;
-    font-size: 8em;
-    font-family: 'Digital-7';
-}
-
-.bg .hours, .bg .minutes, .bg .seconds {
-    color: #ddd;
-}
-
-.fg .hours, .fg .minutes, .fg .seconds {
-    color: #fff;
-}
-
-.separators {
-    height: 100px;
-    font-size: 8em;
-
-    color: #fff;
-    font-family: 'Digital-7';
-}
-
 /******************************** THE BUTTONS ***/
 .buttons {
     height: 100px;
