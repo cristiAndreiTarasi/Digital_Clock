@@ -4,72 +4,41 @@ body {
     padding: 0;
 }
 
+.todo {
+    color : #1e1e1e;
+    position: absolute;
+    top: 20px;
+}
+
+.todo ul {
+    list-style: underline;
+}
+
 .container {
     background-color: #a8d15d;
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .clock {
     background-color: #1b2b34;
-    width: 700px;
-    height: 450px;
-
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
 }
 
 /******************************** DAYS ***/
 .days {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    width: 100%;
-    height: 30px;
-    margin: 0 auto;
 }
 
 .days p {
-    display: inline-block;
-    font-family: 'Digital-7';
     color : #1e1e1e;
-    padding: 0;
-    margin: 0;
 }
 
 /******************************** THE TIME ***/
 .time {
-    display: block;
-    height: 100px;
-    width: 520px;
-    margin: 0 auto;
-    margin-bottom: 40px;
 }
 
 .back, .fore {
-    /*display: block;*/
-    width: 520px;
-    height: 100px;
-    position: absolute;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .fore .hour, .fore .minute, .fore .second,
 .back .hour, .back .minute, .back .second {
-    /*display: inline-block;*/
-    width: 120px;
-    height: 100px;
-    font-size: 8em;
-    font-family: 'Digital-7';
 }
 
 .back .hour, .back .minute, .back .second {
@@ -81,34 +50,19 @@ body {
 }
 
 .separator {
-    height: 100px;
-    font-size: 8em;
-
     color: #ddd;
-    font-family: 'Digital-7';
 }
 
 /******************************** THE STOPWATCH ***/
 .stopwatch {
-    height: 100px;
+    /*display: none;*/
 }
 
 .bg, .fg {
-    width: 520px;
-    height: 100px;
-    position: absolute;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .fg .hours, .fg .minutes, .fg .seconds,
 .bg .hours, .bg .minutes, .bg .seconds {
-    width: 120px;
-    height: 100px;
-    font-size: 8em;
-    font-family: 'Digital-7';
 }
 
 .bg .hours, .bg .minutes, .bg .seconds {
@@ -120,32 +74,16 @@ body {
 }
 
 .separators {
-    height: 100px;
-    font-size: 8em;
-
     color: #ddd;
-    font-family: 'Digital-7';
 }
 
 /******************************** THE BUTTONS ***/
 .buttons {
-    height: 25%;
-    width: 520px;
-    display: flex;
-    justify-content: space-between;
 }
 
 button {
-    all: unset;
-
     background-color: #1b2b34;
     color: #aaa;
-    padding: 20px 30px;
-    align-self: flex-end;
-    font-family: 'sans-serif';
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
     box-shadow: 1px 1px  1px 1px #1e1f29;
 }
 

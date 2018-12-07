@@ -53,8 +53,9 @@ function currDayColor() {
     //find wich day name in .days div matches with the string returned by today variable
     //and change its color
     for(let i = 0, len = days.length; i < len; i++) {
-        if(days[i].textContent == today)
+        if(days[i].textContent == today) {
             days[i].style.color = '#fff';
+        }
     }
 }
 

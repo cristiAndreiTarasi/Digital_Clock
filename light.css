@@ -5,6 +5,16 @@ body {
     padding: 0;
 }
 
+.todo {
+    color : #1e1e1e;
+    position: absolute;
+    top: 20px;
+}
+
+.todo ul {
+    list-style: underline;
+}
+
 .container {
     background-color: #a8d15d;
     height: 100vh;
@@ -17,7 +27,7 @@ body {
 .clock {
     background-color: #ccc;
     width: 700px;
-    height: 450px;
+    /*height: 450px;*/
 
     display: flex;
     flex-direction: column;
@@ -92,6 +102,7 @@ body {
 /******************************** THE STOPWATCH ***/
 .stopwatch {
     height: 100px;
+    display: none;
 }
 
 .bg, .fg {
@@ -113,11 +124,11 @@ body {
 }
 
 .bg .hours, .bg .minutes, .bg .seconds {
-    color: #fff;
+    color: #ddd;
 }
 
 .fg .hours, .fg .minutes, .fg .seconds {
-    color: #ddd;
+    color: #fff;
 }
 
 .separators {
@@ -130,10 +141,11 @@ body {
 
 /******************************** THE BUTTONS ***/
 .buttons {
-    height: 25%;
+    height: 100px;
     width: 520px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 button {
@@ -142,7 +154,6 @@ button {
     background-color: #ccc;
     color: #aaa;
     padding: 20px 30px;
-    align-self: flex-end;
     font-family: 'sans-serif';
     font-size: 1em;
     font-weight: bold;
