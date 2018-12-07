@@ -144,7 +144,7 @@ body {
     height: 100px;
     width: 520px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
