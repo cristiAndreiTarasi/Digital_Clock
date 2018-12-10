@@ -10,15 +10,6 @@
     <body onload="clockMechanism(); currDayColor();">
         <div class="container">
 
-            <div class="todo">
-                <h1>To do for this application:</h1>
-                <ul>
-                    <li>Make stopwatch roll down</li>
-                    <li>Make buttons to control stopwatch</li>
-                    <li>Finish day highlight behaviour on light theme</li>
-                </ul>
-            </div>
-
             <div class="clock">
                 <div class="screen">
                     <div class="days">
@@ -29,7 +20,7 @@
                        <p class="thursday">thu</p>
                        <p class="friday">fri</p>
                        <p class="saturday">sat</p>
-                    </div>
+                    </div> <!-- end of days -->
 
                     <div class="time">
                         <div class="back">
@@ -38,7 +29,7 @@
                             <div class="minute">00</div>
                             <div class="separator">:</div>
                             <div class="second">00</div>
-                        </div>
+                        </div> 
 
                         <div class="fore">
                             <div class="hour"></div>
@@ -47,14 +38,14 @@
                             <div class="separator">:</div>
                             <div class="second"></div>
                         </div>
-                    </div>
-                </div>
+                    </div> <!-- end of time -->
+                </div> <!-- end of screen -->
 
                 <div class="buttons">
                     <button id="theme">Toggle Theme</button>
-                </div>
-            </div>
-        </div>
+                </div> <!-- end of buttons -->
+            </div> <!-- end of clock -->
+        </div> <!-- end of container -->
 
         <script src="app.js"></script>
     </body>

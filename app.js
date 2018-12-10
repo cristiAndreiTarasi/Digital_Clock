@@ -1,9 +1,9 @@
 
-const hour   = document.querySelector('.fore .hour'),
-minute   = document.querySelector('.fore .minute'),
-second   = document.querySelector('.fore .second'),
-clock    = document.querySelector('.clock'),
-screen   = document.querySelector('.screen');
+const hour = document.querySelector('.fore .hour'),
+minute     = document.querySelector('.fore .minute'),
+second     = document.querySelector('.fore .second'),
+clock      = document.querySelector('.clock'),
+screen     = document.querySelector('.screen');
 
 //Clock
 function clockMechanism() {
@@ -59,7 +59,4 @@ function currDayColor() {
     }
 }
 
-//Stopwatch
-document.getElementById('stop').addEventListener('click', () => {
 
-}, false);
