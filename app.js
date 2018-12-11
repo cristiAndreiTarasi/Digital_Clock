@@ -5,6 +5,7 @@ second     = document.querySelector('.fore .second'),
 clock      = document.querySelector('.clock'),
 screen     = document.querySelector('.screen');
 
+
 //Clock
 function clockMechanism() {
     //get hour,minute and second
@@ -58,5 +59,3 @@ function currDayColor() {
         }
     }
 }
-
-

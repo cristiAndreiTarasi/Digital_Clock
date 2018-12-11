@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: aliceblue;
+    background-color: #21305e;
 
     display: flex;
     flex-direction: column;
@@ -12,9 +12,11 @@ body {
 
 /******************* CLOCK*/
 .clock {
-    width: 700px;
+    width: 480px;
     margin: 0 auto;
+    padding: 40px 0;
     background-color: #2e4384;
+    box-shadow: 5px 5px 5px #141d39;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +24,7 @@ body {
 
 /******************* SCREEN*/
 .screen {
-    width: 600px;
+    width: 380px;
     background-color: #3c56aa;
     display: flex;
     flex-direction: column;
@@ -31,15 +33,18 @@ body {
 
 /******************* DAYS*/
 .days {
-    width: 300px;
+    width: 380px;
+    padding: 0 20px;
     background-color: #556fc3;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    font-family: Digital-7;
+    font-weight: bold;
 }
 
 .days p {
-    background-color: #7b8fd1;
-    border: 1px solid #c6cfeb;
+    /* border: 1px solid #c6cfeb; */
+    color: #2e4384 ;
     box-sizing: border-box;
     display: inline-block;
 }
@@ -47,45 +52,74 @@ body {
 /******************* TIME*/
 .time {
     background-color: #556fc3;
+    /* border: 1px solid #c6cfeb; */
+    box-sizing: content-box;
+    width: 380px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    height: 200px;
+    justify-content: center;
+    height: 100px;
+    position: relative;
 }
 
-.back, .fore {
-    background-color: #7b8fd1;
-    border: 1px solid #c6cfeb;
-    /* box-sizing: border-box; */
-    width: 300px;
+/* .back, */ .fore {
+    /* background-color: #7b8fd1; */
+    width: 600px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.fore {
+/* .fore {
     position: absolute;
+} */
+
+/* .back .hour, .back .minute, .back .second,  */
+.fore .hour, .fore .minute, .fore .second { 
+    /* background-color: #a1afde; */
+    /* border: 1px solid #c6cfeb; */
+    box-sizing: border-box;
+    text-shadow: 5px 5px 5px #2e4384;
+    /* width: 100px; */
+    font-size: 6.3rem;
+    font-family: Digital-7;
 }
 
-.back *, .fore * {
-    background-color: #a1afde;
-    border: 1px solid #c6cfeb;
-    box-sizing: border-box;
+.back .separator, .fore .separator {
+    text-shadow: 5px 5px 5px #2e4384;
+    width: 40px;
+    font-size: 6.3rem;
+    font-family: Digital-7;
+    text-align: center;
+}
+
+.fore * {
+    color: lavender;
 }
 
 /******************* BUTTONS*/
 .buttons {
-    width: 300px;
-    background-color: #556fc3;
+    width: 380px;
+    height: 60px;
+    margin-top: 40px;
+    padding: 0 20px;
+    /* background-color: #556fc3; */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #theme {
     all: unset;
-
-    width: 100px;
-    background-color: #a1afde;
+    height: 20px;
+    padding: 10px 20px;
+    background-color: #556fc3;
+    box-shadow: 5px 5px 5px #21305e;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2e4384 ;
 }

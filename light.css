@@ -1,1 +1,127 @@
 
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #e0ae38;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+/******************* CLOCK*/
+.clock {
+    width: 480px;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color:#e7c064;
+    box-shadow: 5px 5px 5px #9b7318;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/******************* SCREEN*/
+.screen {
+    width: 380px;
+    background-color: #eed291;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/******************* DAYS*/
+.days {
+    width: 380px;
+    padding: 0 20px;
+    background-color: #eed291;
+    display: flex;
+    justify-content: space-between;
+    font-family: Digital-7;
+    font-weight: bold;
+}
+
+.days p {
+    /* border: 1px solid #c6cfeb; */
+    color: #6e5211;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/******************* TIME*/
+.time {
+    background-color: #eed291;
+    /* border: 1px solid #c6cfeb; */
+    box-sizing: content-box;
+    width: 380px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: relative;
+}
+
+/* .back, */ .fore {
+    /* background-color: #7b8fd1; */
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .fore {
+    position: absolute;
+} */
+
+/* .back .hour, .back .minute, .back .second,  */
+.fore .hour, .fore .minute, .fore .second { 
+    /* background-color: #a1afde; */
+    /* border: 1px solid #c6cfeb; */
+    box-sizing: border-box;
+    /* text-shadow: 5px 5px 5px #2e4384; */
+    /* width: 100px; */
+    font-size: 6.3rem;
+    font-family: Digital-7;
+}
+
+.back .separator, .fore .separator {
+    /* text-shadow: 5px 5px 5px #2e4384; */
+    width: 40px;
+    font-size: 6.3rem;
+    font-family: Digital-7;
+    text-align: center;
+}
+
+.fore * {
+    color: #6e5211;
+}
+
+/******************* BUTTONS*/
+.buttons {
+    width: 380px;
+    height: 60px;
+    margin-top: 40px;
+    padding: 0 20px;
+    /* background-color: #556fc3; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme {
+    all: unset;
+    height: 20px;
+    padding: 10px 20px;
+    background-color: #eed291;
+    box-shadow: 5px 5px 5px #9b7318;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6e5211;
+}
